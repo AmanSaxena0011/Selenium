@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CRMPRO Test automtion regression suite" duration-ms="40678" started-at="2020-07-21T06:21:13Z" finished-at="2020-07-21T06:21:54Z">
+    <groups>
+    </groups>
+    <test name="CRMPRO App Test-Chrome" duration-ms="40678" started-at="2020-07-21T06:21:13Z" finished-at="2020-07-21T06:21:54Z">
+      <class name="com.myTest.LoginPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.myTest.LoginPageTest@27efef64]" name="setup" is-config="true" duration-ms="14627" started-at="2020-07-21T06:21:13Z" finished-at="2020-07-21T06:21:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getTitle()[pri:0, instance:com.myTest.LoginPageTest@27efef64]" name="getTitle" duration-ms="15" started-at="2020-07-21T06:21:28Z" finished-at="2020-07-21T06:21:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myTest.LoginPageTest@27efef64]" name="teardown" is-config="true" duration-ms="788" started-at="2020-07-21T06:21:28Z" finished-at="2020-07-21T06:21:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myTest.LoginPageTest -->
+      <class name="com.myTest.HomePageTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.myTest.HomePageTest@6f7fd0e6]" name="setup" is-config="true" duration-ms="13828" started-at="2020-07-21T06:21:29Z" finished-at="2020-07-21T06:21:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="getTitle()[pri:0, instance:com.myTest.HomePageTest@6f7fd0e6]" name="getTitle" duration-ms="10631" started-at="2020-07-21T06:21:43Z" finished-at="2020-07-21T06:21:53Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to be "CRMPRO". Current title: "CRMPRO - CRM software for customer relationship management, sales, and support." (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DLLT-6523', ip: '192.168.225.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AMAN~1.SAX\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f0a27a41d3db70a5bff5fbfe0e05e392]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "CRMPRO". Current title: "CRMPRO - CRM software for customer relationship management, sales, and support." (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DLLT-6523', ip: '192.168.225.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\AMAN~1.SAX\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:56289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f0a27a41d3db70a5bff5fbfe0e05e392
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.myTest.HomePageTest.doLogin(HomePageTest.java:26)
+at com.myTest.HomePageTest.getTitle(HomePageTest.java:15)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.myTest.HomePageTest@6f7fd0e6]" name="teardown" is-config="true" duration-ms="754" started-at="2020-07-21T06:21:53Z" finished-at="2020-07-21T06:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.myTest.HomePageTest -->
+    </test> <!-- CRMPRO App Test-Chrome -->
+  </suite> <!-- CRMPRO Test automtion regression suite -->
+</testng-results>
